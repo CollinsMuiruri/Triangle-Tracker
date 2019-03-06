@@ -1,8 +1,12 @@
 body{
     color: #07374a;
     font-family: 'Laila', serif;
-    background-image: url(Falling_leaves.gif);
-    background-color: #25b79f;
+    /* background-image: url(Falling_leaves.gif); */
+    /* background-color: #25b79f; */
+    background-image: url(pink.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 #leftsection{
     padding-left: 50px;
@@ -17,12 +21,12 @@ body{
 .triangle-up{
     float: right;
     margin-bottom: 900px;
-    margin-right: 500px;
+    margin-right: 200px;
     width: 0px;
     height: 0;
     border-left: 205px solid transparent;
     border-right: 205px solid transparent;
-    border-bottom: 350px solid #07374a;
+    border-bottom: 350px solid #25b79f;
 }
 footer{
     float: center;
