@@ -13,11 +13,11 @@
     <h1 align="center" style="padding-top: 00px">THE TRIANGLE TRACKER</h1>
     <section id="leftsection">
             Side 1:<br>
-            <input type="number" Name="a" id="a" style="background-color: transparent"><br>
+            <input type="number" Name="a" id="a" style="background-color: transparent" min="1"><br>
             Side 2:<br>
-            <input type="number" name="b" id="b" style="background-color: transparent"><br>
+            <input type="number" name="b" id="b" style="background-color: transparent" min="1"><br>
             Side 3:<br>
-            <input type="number" name="c" id="c" style="background-color: transparent"><br>
+            <input type="number" name="c" id="c" style="background-color: transparent" min="1"><br>
             <a class="button1" onClick="triangle()">CHECK</a>
     </section>
 
@@ -35,22 +35,21 @@
         var B = document.getElementById("b").value;
         var C = document.getElementById("c").value;
 
-        if ((A + B > C) && (B + C > A) && (A + C > B)){
-        document.getElementsByName('output')[0].value = "These values could form a triangle";
-        
+        if((A + B > C) && (B + C > A) && (A + C > B)){
+        window.alert("These values could form a triangle")
         }
-        else if (A === B && B === C)
-        {
-        document.getElementsByName('output')[0].value = "This is an equilateral triangle";
-        }
-        else if ((A === B && B !== C) || (A === C && C !== B) || (B === C && C !== A))
-        {
-        document.getElementsByName('output')[0].value = "This is an isosceles triangle";
-        }
-        else if(A !== B && A !== C && B !== C)
-        {
-        document.getElementsByName('output')[0].value = "This is a scalene triangle";
-        }
+            if (A === B && B === C)
+            {
+            document.getElementsByName('output')[0].value = "This is an equilateral triangle";
+            }
+            else if ((A === B && B !== C) || (A === C && C !== B) || (B === C && C !== A))
+            {
+            document.getElementsByName('output')[0].value = "This is an isosceles triangle";
+            }
+            else if(A !== B && A !== C && B !== C)
+            {
+            document.getElementsByName('output')[0].value = "This is a scalene triangle";
+            }
         else{
         document.getElementsByName('output')[0].value = "These values could not form a triangle";
         }
