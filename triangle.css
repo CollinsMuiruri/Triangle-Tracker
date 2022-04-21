@@ -3,6 +3,7 @@ body {
     color: darkblue;
     font-family: 'Nunito', sans-serif;
     transition: 1s;
+    transition-timing-function: ease;
 }
 
 h1 {
@@ -52,4 +53,55 @@ img {
 
 .output {
     font-size: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .all-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+    #la,
+    #lb,
+    #lc {
+        font-size: 25px;
+    }
+    input {
+        width: 10rem;
+        height: 2rem;
+        margin-bottom: 1rem;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 3px;
+        border: 2px solid;
+    }
+    #chkbtn {
+        padding: 10px;
+        border: 2px solid black;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 20px;
+        color: white;
+        background: black;
+    }
+    #chkbtn:hover {
+        color: black;
+        transition: .4s;
+        background: white;
+    }
+    .outputs {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    img {
+        height: 150px;
+    }
+    .output {
+        font-size: 30px;
+    }
 }
