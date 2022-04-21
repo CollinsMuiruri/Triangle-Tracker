@@ -1,59 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Laila" rel="stylesheet">
-    <link rel="stylesheet" href="triangle.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <title> Triangle Tracker </title>
+    <link rel="stylesheet" href="./triangle.css">
+    <title>Triangle Tracker</title>
 </head>
+
 <body>
-    <h1 align="center" style="padding-top: 00px">THE TRIANGLE TRACKER</h1>
-    <section id="leftsection">
-            Side 1:<br>
-            <input type="number" Name="a" id="a" style="background-color: transparent" min="1"><br>
-            Side 2:<br>
-            <input type="number" name="b" id="b" style="background-color: transparent" min="1"><br>
-            Side 3:<br>
-            <input type="number" name="c" id="c" style="background-color: transparent" min="1"><br>
-            <a class="button1" onClick="triangle()">CHECK</a>
-    </section>
-
-    <section id="rightsection">
-        <!-- <div class="triangle-up"></div> -->
-    </section>
-
-    <footer>
-        <input type="text"  name="output" id="input" style="font-family: 'Laila', serif;background-color: #25b79f">
-    </footer>
-    <script type="text/javascript">
-    function triangle(){
-        alert("Hello welcome to The Triangle checker!!")
-        var A = document.getElementById("a").value;
-        var B = document.getElementById("b").value;
-        var C = document.getElementById("c").value;
-
-        if((A + B > C) && (B + C > A) && (A + C > B)){
-        window.alert("These values could form a triangle")
-        }
-            if (A === B && B === C)
-            {
-            document.getElementsByName('output')[0].value = "This is an equilateral triangle";
-            }
-            else if ((A === B && B !== C) || (A === C && C !== B) || (B === C && C !== A))
-            {
-            document.getElementsByName('output')[0].value = "This is an isosceles triangle";
-            }
-            else if(A !== B && A !== C && B !== C)
-            {
-            document.getElementsByName('output')[0].value = "This is a scalene triangle";
-            }
-        else{
-        document.getElementsByName('output')[0].value = "These values could not form a triangle";
-        }
-    }
-    </script>
+    <h1>THE TRIANGLE TRACKER</h1>
+    <div class="all-items">
+        <div class="values">
+            <label id="la"> SIDE 1</label>
+            <br>
+            <input type="tel" id="a">
+            <br>
+            <label id="lb"> SIDE 2</label>
+            <br>
+            <input type="tel" id="b">
+            <br>
+            <label id="lc"> SIDE 3</label>
+            <br>
+            <input type="tel" id="c">
+            <br>
+            <a id="chkbtn" onclick="triangle()">CHECK TRIANGLE</a>
+        </div>
+        <div class="outputs">
+            <img src="./images/load.gif" alt="triangle image" id="triimage">
+            <p class="output">Insert values to view triangle type</p>
+        </div>
+    </div>
+    <script src="./scripts.js"></script>
 </body>
+
 </html>

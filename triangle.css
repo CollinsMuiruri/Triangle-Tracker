@@ -1,138 +1,55 @@
-body{
-    color: #07374a;
-    font-family: 'Laila', serif;
-    background-color: #25b79f;
-    /* background-image: url(Falling_leaves.gif); */
-    /* background-image: url(pink.jpg); */
-    background-position: center;
-    background-size: 100%;
-    background-attachment: fixed;
-}
-#leftsection{
-    padding-left: 50px;
-    font-size: 50px;
-    float: left;
-}
-#rightsection{
-    float: right;
-    width: 220px;
-    margin-left: 30px;
-}
-.triangle-up{
-    float: right;
-    margin-bottom: 900px;
-    margin-right: 200px;
-    width: 0px;
-    height: 0;
-    border-left: 205px solid transparent;
-    border-right: 205px solid transparent;
-    border-bottom: 350px solid #07374a;
-}
-footer{
-    float: center;
-    font-size: 50px;
-    padding-top: 400px;
-    padding-left: 350px;
-}
-#input{
-    font-size: 50px;
-    border:3px solid #07374a;
-    border-radius: 4px;
-    margin: 8px 0;
-    outline: none;
-    padding: 3px;
-    box-sizing: border-box;
-    transition: 1s;
-    margin-left: 150px;
-}
-#input:focus{
-    border-color: pink;
-    box-shadow: 0 0 8px 0 dodgerblue;
-}
-#a{
-    color: #07374a;
-    font-family: 'Laila', serif; 
-    font-size: 25px;
-    border:3px solid #07374a;
-    border-radius: 4px;
-    margin: 8px 0;
-    outline: none;
-    padding: 8px;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&family=Ultra&display=swap');
+body {
+    color: darkblue;
+    font-family: 'Nunito', sans-serif;
     transition: 1s;
 }
-#a:focus{
-    border-color: pink;
-    box-shadow: 0 0 8px 0 dodgerblue;
-}
-#b{
-    color: #07374a;
-    font-family: 'Laila', serif;
-    font-size: 25px;
-    border:3px solid #07374a;
-    border-radius: 4px;
-    margin: 8px 0;
-    outline: none;
-    padding: 8px;
-    box-sizing: border-box;
-    transition: 1s;
-}
-#b:focus{
-    border-color: pink;
-    box-shadow: 0 0 8px 0 dodgerblue;
-}
-#c{
-    font-family: 'Laila', serif;
-    color: #07374a;
-    font-size: 25px;
-    border:3px solid #07374a;
-    border-radius: 4px;
-    margin: 8px 0;
-    outline: none;
-    padding: 8px;
-    box-sizing: border-box;
-    transition: 1s;
-    background: #07374a;
-}
-#c:focus{
-    border-color: #25b79f;
-    box-shadow: 0 0 8px 0 dodgerblue;
-}
-.button1{ 
-    animation:bounce 6s infinite linear;
-    position:relative;
-    }
-    @keyframes bounce {
-    0%{top:0em}
-    40%{top:0em}
-    43%{top:-0.9em}
-    46%{top:0em}
-    48%{top:-0.4em}
-    50%{top:0em}
-    100%{top:0em;}
-    }
-    a.button1{
-        display:inline-block;
-        padding:0.25em 1.2em;
-        border:0.1em solid #07374a;
-        margin:0 0.3em 0.3em 0;
-        border-radius:10.12em;
-        box-sizing: border-box;
-        text-decoration:none;
-        font-family:'Laila',sans-serif;
-        font-weight:300;
-        color: #07374a;
-        text-align:center;
-        transition: all 0.2s;
-        }
-        a.button1:hover{
-            color:#25b79f;
-            background-color:#07374a;
-        }
-        @media all and (max-width:30em){
-         a.button1{
 
-            display:block;
+h1 {
+    text-align: center;
+    font-family: 'Ultra', serif;
+    font-size: 40px;
+}
 
-margin:0.4em auto;
-}}
+.all-items {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#la,
+#lb,
+#lc {
+    font-size: 50px;
+}
+
+input {
+    width: 20rem;
+    height: 3rem;
+    margin-bottom: 2rem;
+    font-size: 30px;
+    border-radius: 3px;
+    border: 2px solid;
+}
+
+img {
+    height: 350px;
+    transition: all 1s;
+}
+
+#chkbtn {
+    padding: 10px;
+    border: 2px solid black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#chkbtn:hover {
+    color: white;
+    transition: .4s;
+    background: black;
+}
+
+.output {
+    font-size: 40px;
+}
